@@ -1,0 +1,21 @@
+/* ==========================================================================
+  Main
+========================================================================== */
+
+
+section {
+  padding: 60px 0;
+  background: #fff;
+  position: relative;
+  z-index: 5;
+
+  @include breakpoint(small) {
+    padding: 40px 0;
+  }
+}
+
+.narrow {
+  padding: 20px 0;
+}
+
+
