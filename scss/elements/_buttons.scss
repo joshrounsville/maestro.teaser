@@ -1,0 +1,47 @@
+/* ==========================================================================
+  Buttons
+========================================================================== */
+
+.btn {
+  border: none;
+  background: $blue;
+  color: #fff;
+  padding: 16px 30px;
+  display: inline-block;
+  text-decoration: none;
+  vertical-align: middle;
+  @include thinFont();
+  transition: background .15s ease-in-out;
+  &:hover,
+  &:focus {
+    color: #fff;
+    outline: 0;
+    background: darken($blue, 10%);
+  }
+
+  .purple & {
+    background: $purple;
+    &:hover,
+    &:focus {
+      background: darken($purple, 10%);
+    }
+  }
+  .light-blue & {
+    background: $lightBlue;
+    &:hover,
+    &:focus {
+      background: darken($lightBlue, 10%);
+    }
+  }
+  .orange & {
+    background: $orange;
+    &:hover,
+    &:focus {
+      background: darken($orange, 10%);
+    }
+  }
+
+  @include breakpoint(large) {
+    font-size: 18px;
+  }
+}
